@@ -162,7 +162,7 @@ main {
 
 .question {
     width: 299px;
-    height: 131px;
+    height: 160px;
     margin-bottom: 25px;
     background: #FFFFD5;
     position: relative;
@@ -174,6 +174,7 @@ main {
     font-family: 'Recursive', sans-serif;
     font-style: normal;
     margin-left: 15px;
+    margin-right: 15px;
     margin-top: 18px;
     font-weight: 400;
     font-size: 18px;
@@ -183,9 +184,45 @@ main {
 
 .question img{
     position: absolute;
-    top: 105px;
+    bottom: 6px;
     right: 6px;
     width: 30px;
     height: 20px;
 }
 
+.answer-button {
+    width: 299px;
+    height: 38px;
+}
+
+.answer-buttons button {
+    font-family: 'Recursive', sans-serif;
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 85.17px;
+    height: 37.17px;
+    border-radius: 5px;
+    border: 0px;
+    
+}
+
+.red {
+    background-color: #FF3030;
+    position: absolute;
+    bottom: 6px;
+    left: 13px;
+}
+
+.orange {
+    background-color: #FF922E;
+    position: absolute;
+    bottom: 6px;
+    left: 108px;
+}
+
+.green {
+    background-color: #2FBE34;
+    position: absolute;
+    bottom: 6px;
+    left: 202px;
+}
