@@ -190,9 +190,14 @@ main {
     height: 20px;
 }
 
-.answer-button {
-    width: 299px;
+.answer-buttons {
+    width: 273px;
     height: 38px;
+    margin-left: 13px;
+    bottom: 6px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
 }
 
 .answer-buttons button {
@@ -208,21 +213,21 @@ main {
 
 .red {
     background-color: #FF3030;
-    position: absolute;
+   /* position: absolute;
     bottom: 6px;
-    left: 13px;
+    left: 13px; */
 }
 
 .orange {
     background-color: #FF922E;
-    position: absolute;
+ /* position: absolute;
     bottom: 6px;
-    left: 108px;
+    left: 108px; */
 }
 
 .green {
     background-color: #2FBE34;
-    position: absolute;
+ /* position: absolute;
     bottom: 6px;
-    left: 202px;
+    left: 202px; */
 }
