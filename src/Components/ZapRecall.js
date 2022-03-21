@@ -1,9 +1,15 @@
+import {useState} from "react";
+import Flashcards from "./Flashcards";
+
 export default function ZapRecall(){
-    return (
+    const [show, setShow] = useState(true);
+    return show ? (
         <section className='zap-recall'>
-            <img src='assets/logo.png' />
+            <img src='assets/logo.png' alt="logo raio" />
             <p>ZapRecall</p>
-            <button>Iniciar Recall!</button>
+            <button onClick={() => setShow(false)}>Iniciar Recall!</button>
         </section>
-    )
+    ) : (
+           <Flashcards />
+        );
 }
