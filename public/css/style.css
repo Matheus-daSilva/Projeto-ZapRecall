@@ -160,6 +160,62 @@ main {
     color: #333333;
 }
 
+.card-red p {
+    font-family: 'Recursive', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+    color: #FF3030;
+    text-decoration: line-through #FF3030;
+}
+
+.card-red ion-icon {
+    width: 24px;
+    height: 27px;
+    padding-right: 12px;
+    font-weight: bold;
+    color: #FF3030;
+}
+
+.card-orange p {
+    font-family: 'Recursive', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+    color: #FF922E;
+    text-decoration: line-through #FF922E;
+}
+
+.card-orange ion-icon {
+    width: 24px;
+    height: 27px;
+    padding-right: 12px;
+    font-weight: bold;
+    color: #FF922E;
+}
+
+.card-green p {
+    font-family: 'Recursive', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+    color: #2FBE34;
+    text-decoration: line-through #2FBE34;
+}
+
+.card-green ion-icon {
+    width: 24px;
+    height: 27px;
+    padding-right: 12px;
+    font-weight: bold;
+    color: #2FBE34;
+}
 .question {
     width: 299px;
     height: 160px;
