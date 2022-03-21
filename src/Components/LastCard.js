@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export default function LastCard({ ID }) {
+export default function LastCard(props) {
+    const {ID, setFinished, finished} = props;
     const [selected, setSelected] = useState(true);
     const [state, setState] = useState("true");
     const questions = ["Pergunta 1", "Pergunta 2", "Pergunta 3", "Pergunta 4", "Pergunta 5", "Pergunta 6", "Pergunta 7", "Pergunta 8"];
@@ -20,13 +21,25 @@ export default function LastCard({ ID }) {
                 <p>{answers[ID]}</p>
                 <div className="answer-buttons">
                     <div onClick={() => setState("red")}>
-                        <button className="red" onClick={() => setSelected(false)}>Não lembrei</button>
+                        <button className="red" onClick={() => {
+                            setSelected(false)
+                            setFinished(finished + 1)
+                        }
+                        }>Não lembrei</button>
                     </div>
                     <div onClick={() => setState("orange")}>
-                        <button className="orange" onClick={() => setSelected(false)}>Quase não lembrei</button>
+                        <button className="orange" onClick={() => {
+                            setSelected(false)
+                            setFinished(finished + 1)
+                        }
+                        }>Quase não lembrei</button>
                     </div>
                     <div onClick={() => setState("green")}>
-                        <button className="green" onClick={() => setSelected(false)}>Zap</button>
+                        <button className="green" onClick={() => {
+                            setSelected(false)
+                            setFinished(finished + 1)
+                        }
+                        }>Zap</button>
                     </div>
                 </div>
             </div>

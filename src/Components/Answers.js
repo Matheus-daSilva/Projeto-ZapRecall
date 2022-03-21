@@ -1,7 +1,8 @@
 import {useState} from "react";
 import LastCard from "./LastCard";
 
-export default function Answers({ID}){
+export default function Answers(props){
+    const {ID, finished, setFinished} = props;
     const [turn, setTurn] = useState(true);
     const questions = [
         "O que é JSX?",
@@ -19,6 +20,6 @@ export default function Answers({ID}){
             <img src='assets/setinha.png' alt="seta" onClick={() => setTurn(false)}/>
         </div>
     ) : (
-        <LastCard ID={ID}/>
+        <LastCard ID={ID} finished={finished} setFinished={setFinished}/>
     )
 }
