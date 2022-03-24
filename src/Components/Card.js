@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Answers from "./Answers";
+import Questions from "./Questions";
 
 export default function Card(props){
     const {questions, ID, finished, setFinished} = props;
@@ -11,6 +11,6 @@ export default function Card(props){
             <ion-icon name="play-outline"></ion-icon>
         </div>
     ) : ( 
-        <Answers ID={ID} finished={finished} setFinished={setFinished}/>
+        <Questions ID={ID} finished={finished} setFinished={setFinished} questions={questions}/>
     );
 }
