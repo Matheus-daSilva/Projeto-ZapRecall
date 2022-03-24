@@ -15,7 +15,7 @@ export default function Flashcards() {
 
                 {questions.map((question) => {
                 
-                    return <Card question={question} ID={questions.indexOf(question)} finished={finished} setFinished={setFinished}/>
+                    return <Card ID={questions.indexOf(question)} finished={finished} setFinished={setFinished}/>
                 })}
 
             </main>
