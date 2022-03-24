@@ -1,9 +1,9 @@
-import ZapRecall from "./ZapRecall";
+import Main from "./Main";
 
 export default function App(){
     return (
         <>
-        <ZapRecall />
+        <Main />
         </>
     )
 }
