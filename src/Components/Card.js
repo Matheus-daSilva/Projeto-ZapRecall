@@ -2,7 +2,7 @@ import {useState} from "react";
 import Answers from "./Answers";
 
 export default function Card(props){
-    const {ID, finished, setFinished} = props;
+    const {questions, ID, finished, setFinished} = props;
     const [selected, setSelected] = useState(true);
 
     return selected ? (
